@@ -49,9 +49,9 @@ function App() {
       </header>
       <section id='about'>
         <div className='txt-container'>
-          <h1 className='space'>About</h1>
-          <p className='space'>
-            My name is Deivid, and I'm a calm guy who enjoys spending quality time with family and friends. As a hobby, I exercise, take my dogs for walks, and study programming. I have big dreams and goals; I want to become a senior programmer, and I dedicate myself every day to learn more and reach that level. I also want to travel the world and help the people I love.
+          <h1 className='title space'>About</h1>
+          <p className='space history'>
+            My name is Deivid, and I'm a calm guy who enjoys spending quality time with family and friends. As a hobby, I exercise, take my dogs for walks, and study programming. I have big dreams and goals; I want to become a senior developer, and I dedicate myself every day to learn more and reach that level. I also want to travel the world and help the people I love.
 
             During my journey, I faced certain difficulties. I didn't have the means to study what I was truly passionate about (programming), so I pursued other things, but I realized I didn't enjoy them. That's when I decided to study programming on my own through online courses. Later on, I had the opportunity to attend a web development bootcamp, and I didn't hesitate; I enrolled and learned a lot. At times, I found it challenging to grasp certain concepts or complete complex projects, but I always faced those difficulties head-on and overcame them.
 
@@ -59,6 +59,11 @@ function App() {
           </p>
         </div>
         <div className='img-container'>
+          <div className='txt-img'>
+            <h1 className='name'>Deivid Dos Santos</h1>
+            <p className='job'>Full Stack Web Developer</p>
+          </div>
+
           <img src="/deivid.JPG" alt="" />
         </div>
       </section>

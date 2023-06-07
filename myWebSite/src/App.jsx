@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
 
   return (
     <div>
-      <header className="fixed-top" /* style={{ position: headerPosition }} */>
+      <header className="fixed-top">
         <section className="toparea">
 
-          <div className="divnav" /* style={{ display: navDisplay }} */>
+          <div className="divnav">
             <nav className="navbar">
 
               <ul className="navlist">
@@ -64,7 +64,7 @@ function App() {
             <p className='job'>Full Stack Web Developer</p>
           </div>
 
-          <img src="/deivid.JPG" alt="" />
+          <img src="/deivid.JPG" alt="Deivid Dos Santos picture" />
         </div>
       </section>
       <h1 id="projects-title" className='header'>Projects</h1>
@@ -73,7 +73,7 @@ function App() {
         <div className='project-container'>
           <h2>Credit Card site</h2>
           <a href="https://creditcardsite.netlify.app/" target='_blank'>
-            <img src="/creditcard.png" alt="" />
+            <img src="/creditcard.png" alt="credit card form website" />
           </a>
         </div>
 
@@ -81,7 +81,7 @@ function App() {
         <div className='project-container'>
           <h2>IP Address Tracker site</h2>
           <a href="https://ipaddresstrackerpro.netlify.app/" target='_blank'>
-            <img src="/iptracker.png" alt="" />
+            <img src="/iptracker.png" alt="ip adress tracker website" />
           </a>
         </div>
 
@@ -89,7 +89,7 @@ function App() {
         <div className='project-container'>
           <h2>To Do app</h2>
           <a href="https://todoapppro.netlify.app/" target='_blank'>
-            <img src="/todo.png" alt="" />
+            <img src="/todo.png" alt="to do app website" />
           </a>
         </div>
 
@@ -97,29 +97,29 @@ function App() {
         <div className='project-container'>
           <h2>Vaz de fiesta</h2>
           <a href="https://vazdefiesta.vercel.app/" target='_blank'>
-            <img src="/vaz.png" alt="" />
+            <img src="/vaz.png" alt="vaz de fiesta website" />
           </a>
         </div>
 
       </section>
       <h1 id='technologies-title' className='header'>Technologies</h1>
       <section id='technologies'>
-        <div className='tech-container'><img src="/react.png" alt="" /></div>
-        <div className='tech-container'><img src="/html.png" alt="" /></div>
-        <div className='tech-container'><img src="/css.png" alt="" /></div>
-        <div className='tech-container'><img src="/postgre.png" alt="" /></div>
-        <div className='tech-container'><img src="/node.png" alt="" /></div>
-        <div className='tech-container'><img src="/javascript.png" alt="" /></div>
+        <div className='tech-container'><img src="/react.png" alt="react logo" /></div>
+        <div className='tech-container'><img src="/html.png" alt="html logo" /></div>
+        <div className='tech-container'><img src="/css.png" alt="css logo" /></div>
+        <div className='tech-container'><img src="/postgre.png" alt="postgre logo" /></div>
+        <div className='tech-container'><img src="/node.png" alt="node logo" /></div>
+        <div className='tech-container'><img src="/javascript.png" alt="javascript logo" /></div>
 
       </section>
       <section id='contact'>
         <h1>Contact me!</h1>
 
-        <div class="contact-links">
-          <a href="tel:+59897346427" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Phone number</a>
-          <a id="profile-link" href="https://github.com/Deividds1" class="btn contact-details" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/leodossantospc/" class="btn contact-details" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
-          <a href="mailto:deivid1421@gmail.com" class="btn contact-details"><i class="fas fa-envelope"></i> Email</a>
+        <div className="contact-links">
+          <a href="tel:+59897346427" className="btn contact-details"><i className="fas fa-mobile-alt"></i> Phone number</a>
+          <a id="profile-link" href="https://github.com/Deividds1" className="btn contact-details" target="_blank"><i className="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/leodossantospc/" className="btn contact-details" target="_blank"><i className="fab fa-linkedin"></i> Linkedin</a>
+          <a href="mailto:deivid1421@gmail.com" className="btn contact-details"><i className="fas fa-envelope"></i> Email</a>
         </div>
 
       </section>

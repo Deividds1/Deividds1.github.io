@@ -119,7 +119,7 @@ function App() {
           <a href="tel:+59897346427" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Phone number</a>
           <a id="profile-link" href="https://github.com/Deividds1" class="btn contact-details" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           <a href="https://www.linkedin.com/in/leodossantospc/" class="btn contact-details" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
-          <a href="deivid1421@gmail.com" class="btn contact-details"><i class="fas fa-envelope"></i> Email</a>
+          <a href="mailto:deivid1421@gmail.com" class="btn contact-details"><i class="fas fa-envelope"></i> Email</a>
         </div>
 
       </section>

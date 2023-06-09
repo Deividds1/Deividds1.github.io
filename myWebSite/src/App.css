@@ -311,7 +311,7 @@ a {
         order: -1;
         height: 40vh;
         border: 1px solid greenyellow;
-        margin-top: 70px;
+        margin-top: 150px;
     }
 
     .name {
@@ -410,7 +410,7 @@ a {
     }
 
     #technologies img {
-        width: 70vw;
+        width: 30vw;
 
     }
 

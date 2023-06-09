@@ -298,6 +298,24 @@ a {
         'opsz' 48
 }
 
+@media (max-width: 1300px) {
+    #about {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .img-container {
+        order: -1;
+        height: 40vh;
+        border: 1px solid greenyellow;
+        margin-top: 40px;
+    }
+
+}
+
 @media (max-width: 800px) {
 
     .name {

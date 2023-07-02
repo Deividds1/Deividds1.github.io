@@ -4,41 +4,6 @@
     padding: 0;
 }
 
- /* Animación para el título 'About' */
-    .title {
-      animation: fadeInLeft 1s;
-    }
-
-    /* Animación para el párrafo de 'About' */
-    .history {
-      animation: fadeInRight 1s;
-    }
-
-    /* Animación para la imagen de perfil */
-    .img-container img {
-      animation: zoomIn 1s;
-    }
-
-    /* Animación para los proyectos */
-    .project-container {
-      animation: fadeInUp 1s;
-    }
-
-    /* Animación para las tecnologías */
-    .tech-container {
-      animation: fadeInUp 1s;
-    }
-
-    /* Animación para la sección de contacto */
-    #contact {
-      animation: slideInUp 1s;
-    }
-
-    /* Animación para el footer */
-    footer {
-      animation: fadeInUp 1s;
-    }
-
 html {
     scroll-behavior: smooth;
 }

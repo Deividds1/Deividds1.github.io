@@ -10,8 +10,44 @@ function App() {
     setMenuAbierto(!menuAbierto);
   };
 
+  const [animacion1, setAnimacion1] = useState(false);
+  const [animacion2, setAnimacion2] = useState(false);
+  const [animacion3, setAnimacion3] = useState(false);
+  const [animacion4, setAnimacion4] = useState(false);
+
+  const toggleAnimacion = (boton) => {
+    switch (boton) {
+      case 'boton1':
+        setAnimacion1(true);
+        setTimeout(() => {
+          setAnimacion1(false);
+        }, 1000);
+        break;
+      case 'boton2':
+        setAnimacion2(true);
+        setTimeout(() => {
+          setAnimacion2(false);
+        }, 1000);
+        break;
+      case 'boton3':
+        setAnimacion3(true);
+        setTimeout(() => {
+          setAnimacion3(false);
+        }, 1000);
+        break;
+      case 'boton4':
+        setAnimacion4(true);
+        setTimeout(() => {
+          setAnimacion4(false);
+        }, 1000);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
-    <div>
+    <div className='fade-in'>
       <header className="fixed-top">
         <section className="toparea">
 
@@ -19,12 +55,25 @@ function App() {
             <nav className="navbar">
 
               <ul className="navlist">
-                <li><a className="links" href="#about">About</a></li>
-                <li><a className="links" href="#projects-title">Projects</a> </li>
-                <li><a className="links" href="#technologies-title">Technologies</a> </li>
-                <li><a className="links" href="#contact">Contact</a> </li>
+                <div className={`nav-container-one ${animacion1 ? 'jello-horizontal' : ''}`}
+                  onClick={() => toggleAnimacion('boton1')}>
+                  <li><a className="links" href="#about">About</a></li>
+                </div>
+                <div className={`nav-container-four ${animacion4 ? 'jello-horizontal' : ''}`}
+                  onClick={() => toggleAnimacion('boton4')}>
+                  <li><a className="links" href="#projects-title">Projects</a></li>
+                </div>
+                <div className={`nav-container-two ${animacion2 ? 'jello-horizontal' : ''}`}
+                  onClick={() => toggleAnimacion('boton2')}>
+                  <li><a className="links" href="#technologies-title">Technologies</a></li>
+                </div>
+                <div className={`nav-container-three ${animacion3 ? 'jello-horizontal' : ''}`}
+                  onClick={() => toggleAnimacion('boton3')}>
+                  <li><a className="links" href="#contact">Contact</a></li>
+                </div>
 
               </ul>
+
             </nav>
           </div>
           <span onClick={toggleMenu} id="burguer" className="material-symbols-outlined">
@@ -50,7 +99,7 @@ function App() {
       <section id='about'>
         <div className='txt-container'>
           <h1 className='title space'>About</h1>
-          <p className='space history'>
+          <p className='space history text-focus-in'>
             My name is Deivid, and I'm a calm guy who enjoys spending quality time with family and friends. As a hobby, I exercise, take my dogs for walks, and study programming. I have big dreams and goals; I want to become a senior developer, and I dedicate myself every day to learn more and reach that level. I also want to travel the world and help the people I love.
 
             During my journey, I faced certain difficulties. I didn't have the means to study what I was truly passionate about (programming), so I pursued other things, but I realized I didn't enjoy them. That's when I decided to study programming on my own through online courses. Later on, I had the opportunity to attend a web development bootcamp, and I didn't hesitate; I enrolled and learned a lot. At times, I found it challenging to grasp certain concepts or complete complex projects, but I always faced those difficulties head-on and overcame them.
@@ -70,34 +119,43 @@ function App() {
       <h1 id="projects-title" className='header'>Projects</h1>
       <section id='projects'>
 
-        <div className='project-container'>
-          <h2>Credit Card site</h2>
+        <div className='project-container heartbeat'>
+
           <a href="https://creditcardsite.netlify.app/" target='_blank'>
-            <img src="/creditcard.png" alt="credit card form website" />
+            <div className='heartbeat'>
+              <h2>Credit Card site</h2>
+              <img src="/creditcard.png" alt="credit card form website" />
+            </div>
           </a>
         </div>
 
 
-        <div className='project-container'>
-          <h2>IP Address Tracker site</h2>
+        <div className='project-container heartbeat'>
           <a href="https://ipaddresstrackerpro.netlify.app/" target='_blank'>
-            <img src="/iptracker.png" alt="ip adress tracker website" />
+            <div className='heartbeat'>
+              <h2>IP Address Tracker site</h2>
+              <img src="/iptracker.png" alt="ip adress tracker website" />
+            </div>
           </a>
         </div>
 
 
         <div className='project-container'>
-          <h2>To Do app</h2>
           <a href="https://todoapppro.netlify.app/" target='_blank'>
-            <img src="/todo.png" alt="to do app website" />
+            <div className='heartbeat'>
+              <h2>To Do app</h2>
+              <img src="/todo.png" alt="to do app website" />
+            </div>
           </a>
         </div>
 
 
         <div className='project-container'>
-          <h2>Vaz de fiesta</h2>
           <a href="https://vazdefiesta.vercel.app/" target='_blank'>
-            <img src="/vaz.png" alt="vaz de fiesta website" />
+            <div className='heartbeat'>
+              <h2>Vaz de fiesta</h2>
+              <img src="/vaz.png" alt="vaz de fiesta website" />
+            </div>
           </a>
         </div>
 

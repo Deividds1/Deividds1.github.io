@@ -702,6 +702,10 @@ a {
 
     }
 
+    #contact {
+        height: 98vh !important;
+    }
+
     #contact h1 {
         font-size: 30px;
         padding: 20px;
